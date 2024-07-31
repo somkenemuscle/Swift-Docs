@@ -15,14 +15,11 @@ import { Input } from "./ui/input"
 import Image from "next/image"
 import { updateDocument } from "@/lib/actions/room.actions"
 import Loader from "./Loader"
+import ShareModal from "./ShareModal"
 
 
 
-
-const Collaborativeroom = ({ roomId, roomMetadata }: CollaborativeRoomProps) => {
-
-    // Simulate the current user's role
-    const currentUserType = 'editor'
+const Collaborativeroom = ({ roomId, roomMetadata, users, currentUserType }: CollaborativeRoomProps) => {
 
     // STATE VARIABLES
     // `editing` controls whether the user is editing the document title
@@ -149,6 +146,12 @@ const Collaborativeroom = ({ roomId, roomMetadata }: CollaborativeRoomProps) => 
                         {/* Render additional components in the header */}
                         <div className="flex w-full flex-1 justify-end sm:gap-3">
                             <Activecollaborators />
+                            <ShareModal
+                                roomId={roomId}
+                                collaborators={users}
+                                creatorId={roomMetadata.creatorId}
+                                currentUserType={currentUserType}
+                            />
                             <SignedOut>
                                 <SignInButton />
                             </SignedOut>
@@ -157,7 +160,10 @@ const Collaborativeroom = ({ roomId, roomMetadata }: CollaborativeRoomProps) => 
                             </SignedIn>
                         </div>
                     </Header>
-                    <Editor />
+                    <Editor
+                        roomId={roomId}
+                        currentUserType={currentUserType}
+                    />
                 </div>
             </ClientSideSuspense>
         </RoomProvider>
