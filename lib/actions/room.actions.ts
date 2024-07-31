@@ -28,7 +28,7 @@ export const createDocument = async ({ userId, email }: CreateDocumentParams) =>
         const room = await liveblocks.createRoom(roomId, {
             metadata,
             usersAccesses,
-            defaultAccesses: ['room:write']
+            defaultAccesses: []
         });
 
         revalidatePath('/');
@@ -41,19 +41,21 @@ export const createDocument = async ({ userId, email }: CreateDocumentParams) =>
 
 
 //GETTING A DOCUMENT
-export const getDocument = async ({ roomId, userId }: { roomId: string, userId: string }) => {
+
+export const getDocument = async ({ roomId, userId }: { roomId: string; userId: string }) => {
     try {
         const room = await liveblocks.getRoom(roomId);
 
-        // const hasAccess = Object.keys(room.usersAccesses).includes(userId);
-        // if (!hasAccess) {
-        //     throw new Error('you do not have access to this document');
-        // }
+        const hasAccess = Object.keys(room.usersAccesses).includes(userId);
+
+        if (!hasAccess) {
+            throw new Error('You do not have access to this document');
+        }
+
         return parseStringify(room);
     } catch (error) {
-        console.log('error happened while getting a room', error)
+        console.log(`Error happened while getting a room: ${error}`);
     }
-
 }
 
 
@@ -125,6 +127,8 @@ export const updateDocumentAccess = async ({ roomId, email, userType, updatedBy 
     }
 }
 
+
+
 export const removeCollaborator = async ({ roomId, email }: { roomId: string, email: string }) => {
     try {
         const room = await liveblocks.getRoom(roomId)
@@ -145,6 +149,8 @@ export const removeCollaborator = async ({ roomId, email }: { roomId: string, em
         console.log(`Error happened while removing a collaborator: ${error}`);
     }
 }
+
+
 
 export const deleteDocument = async (roomId: string) => {
     try {

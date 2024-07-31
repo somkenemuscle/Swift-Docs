@@ -7,6 +7,8 @@ import { redirect } from "next/navigation"
 import { getAllDocuments } from "@/lib/actions/room.actions"
 import Link from "next/link"
 import { dateConverter } from "@/lib/utils"
+import { DeleteModal } from "@/components/DeleteModal"
+import Notifications from "@/components/Notifications"
 
 const Home = async () => {
 
@@ -27,7 +29,7 @@ const Home = async () => {
       <Header className='sticky left-0 top-0'>
         <div className="flex items-center gap-2 lg:gap-4">
           {/* Placeholder for notification */}
-          Notification
+          <Notifications />
           {/* Render the user button if the user is signed in */}
           <SignedIn>
             <UserButton />
@@ -69,6 +71,8 @@ const Home = async () => {
                     <p className="text-sm font-light text-blue-100">Created about {dateConverter(createdAt)}</p>
                   </div>
                 </Link>
+
+                <DeleteModal roomId={id} />
               </li>
             ))}
           </ul>
@@ -89,7 +93,7 @@ const Home = async () => {
             userId={clerkUser.id} // Pass user ID to the AddDocumentBtn component
             email={clerkUser.emailAddresses[0].emailAddress} // Pass user email to the AddDocumentBtn component
           />
-          
+
         </div>
       )}
     </main>
