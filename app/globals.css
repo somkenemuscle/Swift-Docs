@@ -5,14 +5,15 @@
 @import "@liveblocks/react-ui/styles.css";
 @import "@liveblocks/react-lexical/styles.css";
 
-@import "../styles/dark-theme.css";
+@import "../styles/light-theme.css";
 
 /* ========================================== TAILWIND STYLES */
 
+
 @layer base {
   :root {
-    background: #09111f;
-    color: #fff;
+    scroll-behavior: smooth;
+    background: white;
     margin: 0;
   }
 
@@ -35,6 +36,7 @@
     background: #7878a3;
   }
 }
+
 
 @layer utilities {
   .text-28-semibold {
@@ -86,7 +88,7 @@
   }
 
   .toolbar-wrapper {
-    @apply z-50 custom-scrollbar w-screen overflow-auto border-y border-dark-300 bg-dark-100 pl-3 pr-4 shadow-sm;
+    @apply z-50 bg-white w-screen overflow-auto border-y pl-3 pr-4;
   }
 
   .editor-wrapper {
@@ -94,7 +96,7 @@
   }
 
   .header {
-    @apply min-h-[92px] min-w-full flex-nowrap bg-dark-100 flex w-full items-center justify-between gap-2 px-4;
+    @apply min-h-[92px] min-w-full flex-nowrap bg-black flex w-full items-center justify-between gap-2 px-4;
   }
 
   .document-list-container {
@@ -106,11 +108,12 @@
   }
 
   .document-list-item {
-    @apply flex items-center justify-between gap-4 rounded-lg bg-doc bg-cover p-5 shadow-xl;
+    @apply flex items-center justify-between gap-4 border-b p-5;
   }
 
+
   .document-list-empty {
-    @apply flex w-full max-w-[730px] flex-col items-center justify-center gap-5 rounded-lg bg-dark-200 px-10 py-8;
+    @apply flex w-full max-w-[730px] flex-col items-center justify-center gap-5 rounded-lg px-10 py-8;
   }
 
   .document-title-input {
@@ -187,7 +190,7 @@
 .cl-signIn-start,
 .cl-signUp-start,
 .cl-footer {
-  background: #060d18;
+  background: white;
   box-shadow: none;
   padding: 20px;
 }
@@ -195,7 +198,7 @@
 .cl-socialButtonsBlockButton,
 .cl-socialButtonsBlockButton:hover {
   height: 40px;
-  background-color: #3371ff;
+  background-color: black;
   color: #fff;
 }
 

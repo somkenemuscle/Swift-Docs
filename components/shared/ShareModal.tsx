@@ -12,10 +12,10 @@ import {
 
 import { useSelf } from '@liveblocks/react/suspense';
 import React, { useState } from 'react'
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import Image from "next/image";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
+import { Label } from "../ui/label";
+import { Input } from "../ui/input";
 import UserTypeSelector from "./UserTypeSelector";
 import Collaborator from "./Collaborator";
 import { updateDocumentAccess } from "@/lib/actions/room.actions";
@@ -45,18 +45,21 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
     return (
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger>
-                <Button className="gradient-blue flex h-9 gap-1 px-4" disabled={currentUserType !== 'editor'}>
+                <span
+                    className="gradient-blue flex items-center justify-center h-9 gap-2 px-4 rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 transition-colors duration-200"
+                    hidden={currentUserType !== 'editor'}
+                >
                     <Image
                         src="/assets/icons/share.svg"
                         alt="share"
                         width={20}
                         height={20}
-                        className="min-w-4 md:size-5"
+                        className="min-w-4"
                     />
-                    <p className="mr-1 hidden sm:block">
+                    <p className="mr-1 hidden sm:block text-white">
                         Share
                     </p>
-                </Button>
+                </span>
             </DialogTrigger>
             <DialogContent className="shad-dialog">
                 <DialogHeader>

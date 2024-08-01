@@ -1,6 +1,6 @@
 "use client"
 import { getClerkUsers } from "@/lib/actions/user.actions";
-import Loader from "@/components/Loader";
+import Loader from "@/components/shared/Loader";
 import {
     LiveblocksProvider,
     ClientSideSuspense,

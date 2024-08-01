@@ -91,7 +91,7 @@ export const updateDocument = async (roomId: string, title: string) => {
 
 }
 
-
+//UPDATE WHO HAS ACCESS TO A DOCUMENT
 export const updateDocumentAccess = async ({ roomId, email, userType, updatedBy }: ShareDocumentParams) => {
     try {
         const usersAccesses: RoomAccesses = {
@@ -129,6 +129,7 @@ export const updateDocumentAccess = async ({ roomId, email, userType, updatedBy 
 
 
 
+//REMOVE COLLABORATOR
 export const removeCollaborator = async ({ roomId, email }: { roomId: string, email: string }) => {
     try {
         const room = await liveblocks.getRoom(roomId)
@@ -151,7 +152,7 @@ export const removeCollaborator = async ({ roomId, email }: { roomId: string, em
 }
 
 
-
+//DELETE A DOCUMENT
 export const deleteDocument = async (roomId: string) => {
     try {
         await liveblocks.deleteRoom(roomId);

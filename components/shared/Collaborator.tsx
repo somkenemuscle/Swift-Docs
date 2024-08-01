@@ -1,7 +1,7 @@
 import Image from 'next/image';;
 import React, { useState } from 'react';
-import UserTypeSelector from './UserTypeSelector';
-import { Button } from './ui/button';
+import UserTypeSelector from '../shared/UserTypeSelector';
+import { Button } from '../ui/button';
 import { removeCollaborator, updateDocumentAccess } from '@/lib/actions/room.actions';
 
 const Collaborator = ({ roomId, creatorId, collaborator, email, user }: CollaboratorProps) => {
@@ -11,11 +11,11 @@ const Collaborator = ({ roomId, creatorId, collaborator, email, user }: Collabor
   const shareDocumentHandler = async (type: string) => {
     setLoading(true);
 
-    await updateDocumentAccess({ 
-      roomId, 
-      email, 
-      userType: type as UserType, 
-      updatedBy: user 
+    await updateDocumentAccess({
+      roomId,
+      email,
+      userType: type as UserType,
+      updatedBy: user
     });
 
     setLoading(false);
@@ -32,7 +32,7 @@ const Collaborator = ({ roomId, creatorId, collaborator, email, user }: Collabor
   return (
     <li className="flex items-center justify-between gap-2 py-3">
       <div className="flex gap-2">
-        <Image 
+        <Image
           src={collaborator.avatar}
           alt={collaborator.name}
           width={36}
@@ -54,9 +54,9 @@ const Collaborator = ({ roomId, creatorId, collaborator, email, user }: Collabor
 
       {creatorId === collaborator.id ? (
         <p className="text-sm text-blue-100">Owner</p>
-      ): (
+      ) : (
         <div className="flex items-center">
-          <UserTypeSelector 
+          <UserTypeSelector
             userType={userType as UserType}
             setUserType={setUserType || 'viewer'}
             onClickHandler={shareDocumentHandler}

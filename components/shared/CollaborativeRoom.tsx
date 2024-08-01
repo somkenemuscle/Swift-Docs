@@ -2,20 +2,20 @@
 
 import { ClientSideSuspense, RoomProvider } from "@liveblocks/react/suspense"
 import { Editor } from "@/components/editor/Editor"
-import Header from "@/components/header"
+import Header from "@/components/shared/header"
 import {
     SignInButton,
     SignedIn,
     SignedOut,
     UserButton
 } from '@clerk/nextjs'
-import Activecollaborators from "./Activecollaborators"
+import Activecollaborators from "../shared/Activecollaborators"
 import { useState, useRef, useEffect } from "react"
-import { Input } from "./ui/input"
+import { Input } from "../ui/input"
 import Image from "next/image"
 import { updateDocument } from "@/lib/actions/room.actions"
-import Loader from "./Loader"
-import ShareModal from "./ShareModal"
+import Loader from "../shared/Loader"
+import ShareModal from "../shared/ShareModal"
 
 
 

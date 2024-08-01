@@ -1,19 +1,21 @@
-import Collaborativeroom from "@/components/CollaborativeRoom";
+import Collaborativeroom from "@/components/shared/CollaborativeRoom";
 import { getDocument } from "@/lib/actions/room.actions";
 import { getClerkUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-
 // Define the Documents component
 const Documents = async ({ params: { id } }: SearchParamProps) => {
 
+
+
+
   // Fetch the current authenticated user from Clerk
   const clerkUser = await currentUser();
-
   // If no user is authenticated, redirect to the sign-in page
   if (!clerkUser) {
-    redirect('/sign-in');
+    return null;
   }
+
 
   // Retrieve the document (room) details using the room ID and the user's email address
   const room = await getDocument({
