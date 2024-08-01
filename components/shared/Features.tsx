@@ -1,5 +1,6 @@
 import { features } from '@/constants/features'
 import SlideIn from './SlideIn'
+import Image from 'next/image'
 
 export default function Example() {
     return (
@@ -27,7 +28,7 @@ export default function Example() {
                             </dl>
                         </div>
                     </div>
-                    <img
+                    <Image
                         alt="Product screenshot"
                         src="https://lh3.googleusercontent.com/4f3H_lxFHLFe0VlteoDi_6LbZhFgQaPp0ilivjwFd0IWg4lAAh1imwbw7QG60BqDJI8Xvo0vNjAumbMPmd_5f2jrTZ3_Gee0ZliDUymrOa7MEwjsOoI=w0-l80-sg-rj-c0xffffff"
                         width={2432}

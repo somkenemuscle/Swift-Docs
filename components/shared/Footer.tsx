@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6">
             <div className="container mx-auto text-center px-4">
 
                 <div className='flex justify-center mb-9'>
-                    <img
+                    <Image
                         src={'/assets/icons/logo.svg'}
                         width={120}
                         height={32}
