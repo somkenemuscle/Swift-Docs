@@ -29,6 +29,7 @@ const Navbar = () => {
                                 width={120}
                                 height={32}
                                 alt="Logo with name"
+                                priority
                             />
                         </Link>
                     </div>
@@ -97,6 +98,7 @@ const Navbar = () => {
                                     width={32}
                                     height={32}
                                     alt="Logo with name"
+                                    priority
                                 />
                             </Link>
 

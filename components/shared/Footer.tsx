@@ -11,6 +11,7 @@ const Footer = () => {
                         width={120}
                         height={32}
                         alt="Logo with name"
+                        priority
                     />
                 </div>
                 {/* Footer Text */}
