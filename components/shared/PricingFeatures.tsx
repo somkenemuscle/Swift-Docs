@@ -18,7 +18,7 @@ export default function PricingFeatures() {
           <div className="mx-auto max-w-2xl sm:text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple And Easy To Use</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our intuitive interface ensures that you can start creating and editing documents right away. With a user-friendly design, you'll be up and running in no time, making document management simpler than ever.
+              Our intuitive interface ensures that you can start creating and editing documents right away. With a user-friendly design, you&apos;ll be up and running in no time, making document management simpler than ever.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -28,7 +28,7 @@ export default function PricingFeatures() {
                 Enjoy all our features at no cost. Our goal is to provide you with a comprehensive document editing experience without any fees or hidden charges.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
+                <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What&apos;s included</h4>
                 <div className="h-px flex-auto bg-gray-100" />
               </div>
               <ul
