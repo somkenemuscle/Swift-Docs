@@ -46,7 +46,7 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger>
                 <span
-                    className="gradient-blue flex items-center justify-center h-9 gap-2 px-4 rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 transition-colors duration-200"
+                    className="bg-dark-200 flex items-center justify-center h-9 gap-2 px-4 rounded-lg cursor-pointer hover:bg-dark-300 active:bg-dark-350 transition-colors duration-200"
                     hidden={currentUserType !== 'editor'}
                 >
                     <Image
@@ -67,11 +67,11 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
                     <DialogDescription>Select which users can view and edit this document</DialogDescription>
                 </DialogHeader>
 
-                <Label htmlFor="email" className="mt-6 text-blue-100">
+                <Label htmlFor="email" className="mt-6 text-dark">
                     Email address
                 </Label>
                 <div className="flex items-center gap-3">
-                    <div className="flex flex-1 rounded-md bg-dark-400">
+                    <div className="flex flex-1 rounded-md">
                         <Input
                             id="email"
                             placeholder="Enter email address"

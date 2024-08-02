@@ -18,7 +18,7 @@ import {
         <SelectTrigger className="shad-select">
           <SelectValue />
         </SelectTrigger>
-        <SelectContent className="border-none bg-dark-200">
+        <SelectContent className="border-none">
           <SelectItem value="viewer" className="shad-select-item">can view</SelectItem>
           <SelectItem value="editor" className="shad-select-item">can edit</SelectItem>
         </SelectContent>

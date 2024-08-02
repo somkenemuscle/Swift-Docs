@@ -46,7 +46,7 @@ const Notifications = () => {
               <InboxNotification 
                 key={notification.id}
                 inboxNotification={notification}
-                className="bg-dark-200 text-white"
+                className="bg-white text-dark"
                 href={`/documents/${notification.roomId}`}
                 showActions={false}
                 kinds={{

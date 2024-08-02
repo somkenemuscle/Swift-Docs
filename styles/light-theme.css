@@ -66,6 +66,8 @@ body {
 .editor-inner {
   background: #fff;
   position: relative;
+  border: 1px solid rgb(225, 223, 223);
+
 }
 
 .editor-input {
@@ -170,6 +172,7 @@ body {
   text-align: right;
   min-width: 25px;
 }
+
 .editor-code:after {
   content: attr(data-highlight-language);
   top: 0;
