@@ -46,7 +46,7 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
         <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger>
                 <span
-                    className="bg-dark-200 flex items-center justify-center h-9 gap-2 px-4 rounded-lg cursor-pointer hover:bg-dark-300 active:bg-dark-350 transition-colors duration-200"
+                    className="mr-1 bg-dark-200 flex items-center justify-center h-9 gap-2 px-2 rounded-lg cursor-pointer hover:bg-dark-300 active:bg-dark-350 transition-colors duration-200"
                     hidden={currentUserType !== 'editor'}
                 >
                     <Image

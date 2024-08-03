@@ -100,7 +100,7 @@ const Collaborativeroom = ({ roomId, roomMetadata, users, currentUserType }: Col
             <ClientSideSuspense fallback={<div><Loader /></div>}>
 
                 <div className="collaborative-room">
-                    <Header>
+                    <Header >
                         {/* Main container for the room header */}
                         <div ref={containerRef} className="flex w-fit items-center justify-center gap-2">
 

@@ -20,13 +20,6 @@ const Notifications = () => {
   return (
     <Popover>
       <PopoverTrigger className="relative flex size-10 items-center justify-center rounded-lg">
-        {/* <Image 
-          src="/assets/icons/bell.svg"
-          alt="inbox"
-          width={24}
-          height={24}
-          className="bg-black p-4 rounded-xl text-gray-100"
-        /> */}
         <BellAlertIcon aria-hidden="true" className="h-8 w-6 text-zinc-800" />
 
         {count > 0 && (

@@ -11,7 +11,6 @@ const Loader = () => {
                 className='animate-spin bg-slate-600'
                 priority
             />
-            Loading ...
         </div>
     )
 }
