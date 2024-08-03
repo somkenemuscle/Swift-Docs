@@ -28,7 +28,7 @@ export default function PricingFeatures() {
                 Enjoy all our features at no cost. Our goal is to provide you with a comprehensive document editing experience without any fees or hidden charges.
               </p>
               <div className="mt-10 flex items-center gap-x-4">
-                <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">What&apos;s included</h4>
+                <h4 className="flex-none text-sm font-semibold leading-6 text-slate-500">What&apos;s included</h4>
                 <div className="h-px flex-auto bg-gray-100" />
               </div>
               <ul
@@ -37,7 +37,7 @@ export default function PricingFeatures() {
               >
                 {includedFeatures.map((feature) => (
                   <li key={feature} className="flex gap-x-3">
-                    <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-indigo-600" />
+                    <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-neutral-700" />
                     {feature}
                   </li>
                 ))}

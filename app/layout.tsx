@@ -7,7 +7,7 @@ import Provider from "./Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Live Docs",
+  title: "Swift Docs",
   description: "An improved document app",
 };
 

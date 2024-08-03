@@ -11,7 +11,6 @@ import {
     SignedOut,
     UserButton
 } from '@clerk/nextjs'
-import Image from 'next/image';
 
 const Navbar = () => {
     // State to control the mobile menu open/close
@@ -24,13 +23,7 @@ const Navbar = () => {
                     <div className="flex lg:flex-1">
                         {/* Company logo */}
                         <Link href="/" className="-m-1.5 p-1.5">
-                            <Image
-                                src={'/assets/icons/logo.svg'}
-                                width={120}
-                                height={32}
-                                alt="Logo with name"
-                                priority
-                            />
+                            <h1 className='font-extrabold text-gray-200'>📑 Swift <span className='font-extrabold text-slate-400'>Docs</span></h1>
                         </Link>
                     </div>
 
@@ -93,13 +86,7 @@ const Navbar = () => {
                             {/* Company logo in mobile menu */}
                             <Link href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <Image
-                                    src={'/assets/icons/logo-icon.svg'}
-                                    width={32}
-                                    height={32}
-                                    alt="Logo with name"
-                                    priority
-                                />
+                                <h1 className='font-extrabold text-dark-200'>📑 Swift <span className='font-extrabold text-slate-400'>Docs</span></h1>
                             </Link>
 
                             {/* Button to close mobile menu */}

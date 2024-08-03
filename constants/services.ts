@@ -4,7 +4,7 @@ export const features = [
     {
         name: 'Effortless Document Creation',
         description:
-            'Creating Documents are now simpler and easier to use  than ever. Use LiveDocs and enjoy the seamless doc flow ',
+            'Creating Documents are now simpler and easier to use  than ever. Use SwiftDocs and enjoy the seamless doc flow ',
         icon: NewspaperIcon,
     },
     {
