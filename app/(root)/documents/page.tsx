@@ -26,8 +26,8 @@ const Documents = async () => {
   return (
     <main className="home-container">
       {/* Render the page header */}
-      <Header className='sticky left-0 top-0'>
-        <div className="flex items-center gap-2 lg:gap-4">
+      <Header className='lg:ml-72 sticky left-0 top-0'>
+        <div className="lg:mx-72 flex items-center gap-2 lg:gap-4">
           {/* Placeholder for notification */}
           <Notifications />
           {/* Render the user button if the user is signed in */}

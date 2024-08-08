@@ -37,7 +37,7 @@ const Collaborator = ({ roomId, creatorId, collaborator, email, user }: Collabor
           alt={collaborator.name}
           width={36}
           height={36}
-          className="size-9 rounded-full"
+          className="size-8 rounded-full"
         />
         <div>
           <p className="line-clamp-1 text-sm font-semibold leading-4 text-dark">
