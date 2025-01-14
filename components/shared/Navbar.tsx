@@ -52,7 +52,7 @@ const Navbar = () => {
                         <Link
                             href="/documents"
                             className='text-sm font-semibold leading-6 hover:text-slate-300'>
-                            Docs
+                            Documents
                         </Link>
                     </div>
 
