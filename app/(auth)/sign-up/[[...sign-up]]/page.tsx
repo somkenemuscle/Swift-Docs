@@ -5,7 +5,7 @@ const SignUpPage = () => {
         <main className="max-h-screen flex items-center">
             <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-y-4">
                 {/* Sign In Section */}
-                <div className="flex justify-center items-center p-8 mt-24 h-screen">
+                <div className="flex justify-center items-center p-8 mt-52 h-screen">
                     <SignUp />
                 </div>
 

@@ -27,7 +27,7 @@ export default function Services() {
                     </div>
                     <div className="col-span-12 hidden lg:block  lg:col-span-6">
                         <div className='p-4'>
-                            <Image src="https://www.contractsent.com/wp-content/uploads/2023/08/importance-of-documenting-contract-changes.svg"  width={700} height={500} alt="hr-img" />
+                            <Image src="https://www.contractsent.com/wp-content/uploads/2023/08/importance-of-documenting-contract-changes.svg" width={700} height={500} alt="hr-img" />
                         </div>
                     </div>
                 </div>
