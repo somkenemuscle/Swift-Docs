@@ -67,12 +67,14 @@ const Navbar = () => {
 
                         {/* Render links if a user is signed out */}
                         <SignedOut>
-                            <UserIcon aria-hidden="true" className=" h-6 w-5" />
-                            <Link
-                                href="/sign-in"
-                                className='text-md text-slate-50 font-semibold leading-6'>
-                                Sign in
-                            </Link>
+                            <span className='flex items-center gap-2'>
+                                {/* <UserIcon aria-hidden="true" className=" h-6 w-6 border border-gray-500 rounded-full p-1" /> */}
+                                <Link
+                                    href="/sign-in"
+                                    className='font-semibold bg-white text-black py-2 px-3 rounded text-sm hover:bg-gray-200'>
+                                    Sign in
+                                </Link>
+                            </span>
                         </SignedOut>
 
                     </div>

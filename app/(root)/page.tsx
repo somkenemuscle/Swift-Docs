@@ -9,8 +9,9 @@ const HomePage = () => {
   return (
     <main>
       <Navbar />
-      <HeroSection />
       <Services />
+
+      {/* <HeroSection /> */}
       <FeatureSection />
       <PricingFeatures />
       <Footer />

@@ -5,22 +5,15 @@ import SlideIn from './SlideIn'
 
 const includedFeatures = [
   "Easy to use with a user-friendly interface",
-  "Seamless authentication with Google or email",
-  "Create and delete documents effortlessly",
-  "Collaborative editing in real-time"
+  "Seamless Collaboration editing in real - time"
 ];
 
 export default function PricingFeatures() {
   return (
     <SlideIn direction='bottom'>
       <div id='pricing' className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple And Easy To Use</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our intuitive interface ensures that you can start creating and editing documents right away. With a user-friendly design, you&apos;ll be up and running in no time, making document management simpler than ever.
-            </p>
-          </div>
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <h1 className='text-center font-extrabold text-4xl'>No need to worry about bills, <br /><span className='text-gray-600'>document for free</span> </h1>
           <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
             <div className="p-8 sm:p-10 lg:flex-auto">
               <h3 className="text-2xl font-bold tracking-tight text-gray-900">All Features Completely Free</h3>
@@ -48,7 +41,7 @@ export default function PricingFeatures() {
                 <div className="mx-auto max-w-xs px-8">
                   <p className="text-base font-semibold text-gray-600">No payments, no fees</p>
                   <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                    <span className="text-5xl font-bold tracking-tight text-gray-900">Free</span>
+                    <span className="text-5xl font-bold tracking-tight text-gray-900">$0</span>
                   </p>
                   <Link
                     href="/documents"
