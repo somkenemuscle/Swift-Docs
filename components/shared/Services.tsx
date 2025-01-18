@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Services() {
     return (
@@ -15,7 +16,7 @@ export default function Services() {
                                 </Link>
 
                                 <Link href='/sign-up'>
-                                    <button className='border border-gray-400 text-white p-4 rounded hover:bg-dark-100 hover:text-white transition-all duration-300'>Sign Up, It's free</button>
+                                    <button className='border border-gray-400 text-white p-4 rounded hover:bg-dark-100 hover:text-white transition-all duration-300'>Sign Up, It&apos;s free</button>
                                 </Link>
                             </div>
 
@@ -23,7 +24,7 @@ export default function Services() {
                     </div>
                     <div className="col-span-12 hidden lg:block  lg:col-span-6">
                         <div className='p-4'>
-                            <img src="https://www.contractsent.com/wp-content/uploads/2023/08/importance-of-documenting-contract-changes.svg" className='' alt="" />
+                            <Image src="https://www.contractsent.com/wp-content/uploads/2023/08/importance-of-documenting-contract-changes.svg" width={500} height={500} alt="hr-img" />
                         </div>
                     </div>
                 </div>
