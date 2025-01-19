@@ -8,7 +8,7 @@ function About() {
             <div className="grid grid-cols-12 gap-4 items-center">
                 <div className="col-span-12 lg:col-span-6">
                     <div className="p-4 md: py-24">
-                        <h1 className='font-extrabold text-6xl'>Better writing <span className='text-gray-400'>better results</span></h1>
+                        <h1 className='font-extrabold text-4xl md:text-6xl'>Better writing <span className='text-gray-400'>better results</span></h1>
                         <p className=' mt-6 font-medium tracking-wide'>Start documenting and sharing live ideas with your group, all with swift docs.</p>
                         <div className='mt-6'>
                             <Link href='/documents'>

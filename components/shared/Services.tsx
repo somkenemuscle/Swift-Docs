@@ -9,7 +9,7 @@ export default function Services() {
                 <div className="grid grid-cols-12 gap-4 items-center">
                     <div className="col-span-12 lg:col-span-6">
                         <div className="p-4 md: py-24">
-                            <h1 className='font-extrabold text-6xl text-white'>Build your story <span className='text-gray-400'>using Swift Docs</span></h1>
+                            <h1 className='font-extrabold text-4xl md:text-6xl text-white'>Build your story <span className='text-gray-400'>using Swift Docs</span></h1>
                             <p className='text-gray-100 mt-6 font-medium tracking-wide'>Write with a simplified interface where all essential features are provided for you.</p>
                             <div className='mt-6 flex gap-y-4 flex-wrap'>
                                 <Link href='/documents'>
