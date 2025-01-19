@@ -4,7 +4,7 @@ import Link from "next/link"
 
 function About() {
     return (
-        <div className='max-w-6xl mx-auto px-6 lg:px-8 my-32'>
+        <div id="features" className='max-w-6xl mx-auto px-6 lg:px-8 my-32'>
             <div className="grid grid-cols-12 gap-4 items-center">
                 <div className="col-span-12 lg:col-span-6">
                     <div className="p-4 md: py-24">

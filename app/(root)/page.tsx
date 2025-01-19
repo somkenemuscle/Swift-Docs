@@ -1,5 +1,4 @@
 import Navbar from "@/components/shared/Navbar"
-import HeroSection from "@/components/shared/HeroSection"
 import FeatureSection from "@/components/shared/Features"
 import PricingFeatures from "@/components/shared/PricingFeatures"
 import Footer from "@/components/shared/Footer"

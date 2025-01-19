@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Services() {
 
     return (
-        <div id='service' className="bg-gray-900 py-20">
+        <div  className="bg-gray-900 py-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-14">
                 <div className="grid grid-cols-12 gap-4 items-center">
                     <div className="col-span-12 lg:col-span-6">
