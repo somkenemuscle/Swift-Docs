@@ -15,7 +15,7 @@ export default function Example() {
                         </p>
                     </div>
                     <div className='hidden md:flex justify-center mt-16'>
-                        <Image src="/assets/images/ffh.jpg" alt='sd_img' width={800} height={600} className='pt-3 h-fit object-cover rounded-t-3xl w-[90%] border-t-[1px] border-x-[1px] shadow-[0px_4px_20px_rgba(170,17,132,0.1)]' />
+                        <Image src="/assets/images/ffh.jpg" alt='sd_img' width={800} height={600} className='pt-3 h-fit object-cover rounded-t-3xl w-[90%] border-t-[1px] border-x-[1px] shadow-[0px_4px_20px_rgba(44,75,168,0.3)]' />
                     </div>
 
                 </div>
