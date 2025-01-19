@@ -9,7 +9,7 @@ function About() {
                 <div className="col-span-12 lg:col-span-6">
                     <div className="p-4 md: py-24">
                         <h1 className='font-extrabold text-6xl'>Better writing <span className='text-gray-400'>better results</span></h1>
-                        <p className=' mt-6 font-medium tracking-wide'>Start documenting and sharing live ideas with your group all with swift docs.</p>
+                        <p className=' mt-6 font-medium tracking-wide'>Start documenting and sharing live ideas with your group, all with swift docs.</p>
                         <div className='mt-6'>
                             <Link href='/documents'>
                                 <button className='bg-gray-900 text-white mr-7 p-4 rounded'>Open a document →</button>

@@ -11,7 +11,7 @@ export default function Services() {
                         <div className="p-4 md: py-24">
                             <h1 className='font-extrabold text-6xl text-white'>Build your story <span className='text-gray-400'>using Swift Docs</span></h1>
                             <p className='text-gray-100 mt-6 font-medium tracking-wide'>Write with a simplified interface where all essential features are provided for you.</p>
-                            <div className='mt-6 flex gap-4 flex-wrap'>
+                            <div className='mt-6 flex gap-y-4 flex-wrap'>
                                 <Link href='/documents'>
                                     <button className='bg-white mr-7 p-4 rounded'>Get Started  →</button>
                                 </Link>
