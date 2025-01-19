@@ -8,7 +8,7 @@ export default function Example() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
                         <p className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            Focus on what matters - <span className='text-gray-400'>your words !</span>
+                            Focus on what matters <span className='text-gray-400'>- your words !</span>
                         </p>
                         <p className="mt-6 leading-8 text-gray-600">
                             Simplify your writing experience with essential features and write with ease.
